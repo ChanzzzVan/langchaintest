@@ -39,10 +39,7 @@ prompt = PromptTemplate(
     template = template,
 )
 
-def load_LLM():
-    llm = OpenAI(temperature = 1)
-    return llm
-llm = load_LLM()
+llm = OpenAI(temperature = 1, openai_api_key= st.secrets["api_key"])
 
 st.set_page_config(page_title='Globalize',page_icon=':robot:')
 st.header('智能AI助手')
