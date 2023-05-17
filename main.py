@@ -20,7 +20,7 @@ from langchain import PromptTemplate
 from langchain.llms import OpenAI
 import os
 import openai
-os.environ["OPENAI_API_KEY"] = "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"
+
 
 template= """
 你是一个修改语句的助手。你要修改的语句是一个对他人拒绝或是抱怨的语句。
